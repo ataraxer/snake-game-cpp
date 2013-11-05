@@ -4,7 +4,7 @@
 * Implements: Snake
 * File: snake.cpp
 *
-* ¿ Karamanov A. A., 2012
+* Â© Karamanov A. A., 2012
 * Developers: Anton Karamanov
 * Date: 08/01/2012
 * Version 1.1.0 Alpha

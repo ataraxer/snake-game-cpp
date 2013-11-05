@@ -15,7 +15,7 @@
 *	GetScale(int) - provides access to snake's n-th scale
 *	Size() - returns snake's length in scales quantity
 *
-* ¿ Karamanov A. A., 2012
+* Â© Karamanov A. A., 2012
 * Developers: Anton Karamanov
 * Date: 08/01/2012
 * Version 1.1.0 Alpha

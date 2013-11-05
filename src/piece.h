@@ -13,7 +13,7 @@
 *	X() - returns value of X coordinate of the segment.
 *	Y() - returns value of Y coordinate of the segment.
 *
-* ¿ Karamanov A. A., 2012
+* Â© Karamanov A. A., 2012
 * Developers: Anton Karamanov
 * Date: 05/01/2012
 * Version 1.1.0 Alpha
