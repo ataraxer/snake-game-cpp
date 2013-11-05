@@ -33,8 +33,7 @@ enum direction {UP, DOWN, RIGHT, LEFT, NONE};
 class Snake {
 	public:
 		/* Constructors */
-		Snake();
-		Snake(int size);
+		Snake(int size = dSnakeSize);
 
 		/* Methods */
 		bool Turn(direction newDirection);

@@ -18,17 +18,19 @@ using std::cout;
 using std::endl;
 
 /* Constructors */
+
 /*
-* Snake()
+* Snake(int size)
 *
-* Default constructor which creates snake with deafult length and default
-* direction (currently RIGHT) with head at default initial coordinates.
+* Default constructor which takes optional length parameter and creates a new snake
+* of that length or default lenght, if no parameter provided, with default direction
+* (currently RIGHT) and head at default initial coordinates.
 *
 * Author: Anton Karamanov
 * Date: 08/01/2012
 * Version: 1.0
 */
-Snake::Snake() : myDirection(RIGHT) {
+Snake::Snake(int size) : myDirection(RIGHT) {
 	// prevents from snake's dislocation due to the check of moving through wall
 	isReady = false;
 	indulgence = 0;
@@ -37,26 +39,6 @@ Snake::Snake() : myDirection(RIGHT) {
 	Piece headSegment(dSnakeInitialPositionX, dSnakeInitialPositionY);
 	myScales.push_back(headSegment);
 	// -1 excludes head
-	for (int i = 0; i < dSnakeSize - 1; i++) {
-		AddScale();
-	}
-	isReady = true;
-}
-
-/*
-* Snake(int size)
-*
-* Creates new snake with length taken from argument size and default 
-* direction (currently RIGHT) with head at default initial coordinates.
-*
-* Author: Anton Karamanov
-* Date: 08/01/2012
-* Version: 1.0
-*/
-Snake::Snake(int size = dSnakeSize) : myDirection(RIGHT) {
-	isReady = false;
-	indulgence = 0;
-	Piece headSegment(dSnakeInitialPositionX, dSnakeInitialPositionY);
 	for (int i = 0; i < size - 1; i++) {
 		AddScale();
 	}

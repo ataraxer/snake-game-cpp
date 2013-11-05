@@ -23,6 +23,12 @@
 	#include <GL/glut.h>
 #endif
 
+#ifdef __APPLE__
+	#include <OpenGL/gl.h>
+	#include <OpenGL/glu.h>
+	#include <GL/glut.h>
+#endif
+
 /* Other libraries */
 #include <stdlib.h>
 #include <math.h>
